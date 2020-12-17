@@ -1,0 +1,24 @@
+:root{
+
+}
+
+html,body,div,p,header,main,footer{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100vw;
+    max-height:100vh;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-image: url(ASSETS/BACKGROUND.png);
+    background-position: center;
+    background-size: cover;
+}
