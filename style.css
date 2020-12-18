@@ -2,7 +2,7 @@
     --font-color: #202020;
 }
 
-html,body,div,p,header,main,footer,img{
+html,body,div,p,header,main,footer,img,a{
     margin:0;
     padding:0;
     border:none;
@@ -18,12 +18,12 @@ body{
 
 .grid-container{
     display: grid;
-    grid-template-rows: .925fr 60vw 1fr;
+    grid-template-rows: .95fr 60vw 1fr;
     grid-template-columns: 1fr 60vw 1fr;
     height: 100%;
     width: 100%;
-    background-image: url(ASSETS/BACKGROUND.png);
-    background-position: center;
+    background-image: url(ASSETS/mobile-img/BACKGROUND.png);
+    background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
 }
