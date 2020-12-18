@@ -1,11 +1,12 @@
 :root{
-
+    --font-color: #202020;
 }
 
-html,body,div,p,header,main,footer{
+html,body,div,p,header,main,footer,img{
     margin:0;
     padding:0;
-    border:0;
+    border:none;
+    outline: 0;
     box-sizing: border-box;
 }
 
@@ -15,10 +16,72 @@ body{
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
-.container{
+.grid-container{
+    display: grid;
+    grid-template-rows: .925fr 60vw 1fr;
+    grid-template-columns: 1fr 60vw 1fr;
     height: 100%;
     width: 100%;
     background-image: url(ASSETS/BACKGROUND.png);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.choices__box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: .25rem;
+    column-gap: .25rem;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.choice__box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.choice__box img{
+    line-height: 1;
+    width: 100%;
+    height: 100%;
+
+}
+
+.choice__box_title{
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.choice__box_title-1{
+    height: 22%;
+    width: 100%;
+    top: -14%;
+    background-image: url(ASSETS/titre-biblio.png);
+}
+
+.choice__box_title-2{
+    top:-14%;
+    width: 54%;
+    height:23%;
+    background-image: url(ASSETS/titre-codex.png);
+}
+
+.choice__box_title-3{
+    bottom:-14%;
+    width: 88%;
+    height:20%;
+    background-image: url(ASSETS/titre-compteur.png);
+}
+
+.choice__box_title-4{
+    bottom:-16%;
+    width: 82%;
+    height:22%;
+    background-image: url(ASSETS/titre-tournois.png);
 }
